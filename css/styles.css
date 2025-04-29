@@ -1,0 +1,27 @@
+.imgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.imgDiv img, ul li img {
+    width: 150px;
+    height: 150px;
+}
+
+label {
+    color: red;
+    font-size: x-large;
+}
+
+.imageList {
+    display: flex;
+    list-style-type: none;
+}
+
+footer {
+    bottom: 0;
+}
+
+footer img {
+    width: 100px;
+}
