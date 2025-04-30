@@ -1,25 +1,84 @@
-.imgDiv {
+body {
+    font-family: 'Trebuchet MS', 'Georgia', 'Verdana';    
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.container-center {    
+    background-color: white;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.profile-container{
+    background-color: aliceblue;
+    color: darkred;
+    padding: 30px 40px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.container {
+    padding-left: 40px;
+}
+
+.lab-list {
+    list-style: none;
+    text-align: left;
+}
+
+.img-div {
     display: flex;
     justify-content: center;
 }
 
-.imgDiv img, ul li img {
+.img-div img {
     width: 150px;
     height: 150px;
 }
 
+section {
+    margin-bottom: 20px;
+}
+
 label {
-    color: red;
+    color: darkred;
     font-size: x-large;
 }
 
-.imageList {
+.mood-container {
     display: flex;
-    list-style-type: none;
+    text-align: center;
+}
+
+.mood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.mood img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.mood p {
+    margin: 0;
+    font-weight: bold;
 }
 
 footer {
+    background-color: whitesmoke;
+    height: 5vh;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer img {
