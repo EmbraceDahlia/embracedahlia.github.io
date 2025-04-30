@@ -22,6 +22,9 @@ body {
 }
 
 .container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
     padding-left: 40px;
 }
 
@@ -38,10 +41,6 @@ body {
 .img-div img {
     width: 150px;
     height: 150px;
-}
-
-section {
-    margin-bottom: 20px;
 }
 
 h1,
@@ -83,7 +82,7 @@ footer {
     bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 
 footer img {
