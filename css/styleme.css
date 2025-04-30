@@ -1,18 +1,18 @@
 body {
-    font-family: 'Trebuchet MS', 'Georgia', 'Verdana';    
+    font-family: 'Trebuchet MS', 'Georgia', 'Verdana';
     background-color: aliceblue;
     margin: 0;
 }
 
-.container-center {    
+.container-center {
     background-color: white;
     height: 95vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.profile-container{
+.profile-container {
     background-color: aliceblue;
     color: darkred;
     padding: 30px 40px;
@@ -20,6 +20,7 @@ body {
     width: 40%;
     margin: auto;
 }
+
 .container {
     padding-left: 40px;
 }
@@ -43,9 +44,13 @@ section {
     margin-bottom: 20px;
 }
 
-label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: darkred;
-    font-size: x-large;
 }
 
 .mood-container {
@@ -56,7 +61,7 @@ label {
 .mood {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     border: 1px solid;
     border-radius: 10px;
 }
