@@ -28,6 +28,10 @@ console.log(rabbit.name);
 console.log(rabbit.speed);
 rabbit.hide();
 rabbit.run();
+rabbit.run();
+rabbit.run();
+rabbit.run();
+rabbit.run();
 console.log(rabbit.speed);
 
 let rabbit2 = new Rabbit("Bobby", 8);
