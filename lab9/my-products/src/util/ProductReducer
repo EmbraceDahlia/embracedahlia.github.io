@@ -1,0 +1,12 @@
+export default function productReducer(state, action) {
+  switch (action.type) {
+    case 'TOGGLE_STOCK':
+      return state.map((product) =>
+        product.id === action.payload
+          ? { ...product, inStock: !product.inStock }
+          : product
+      );
+    default:
+      return state;
+  }
+}
