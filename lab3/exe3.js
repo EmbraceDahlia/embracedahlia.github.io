@@ -6,15 +6,16 @@ let libraryBooks = [
 ];
 
 // addBook, which will take title, author, and ID as inputs. It will create a new book object and add it to the libraryBooks if not exists. addBook should return the newly created book.
+
 function addBook(title, author, ID) {
-    const bookExists = libraryBooks.find(b=>b.title===title && b.author===author && b.ID===ID);
-    if(bookExists) {
+    const bookExists = libraryBooks.find(b => b.title === title && b.author === author && b.ID === ID);
+    if (bookExists) {
         console.log("Book already exists!");
         return null;
     }
-    let book = Object.create({ title, author, ID });
+    let book = { title, author, ID };
     libraryBooks.push(book);
-    console.log("Added a book.")
+    console.log("Added a book.");
     return book;
 }
 
@@ -34,6 +35,10 @@ function findBooks(titleKeyword) {
 addBook("Two things", "Seuss", 1000);
 addBook("Two siblings", "Seuss", 1000);
 addBook("Two things", "Seuss", 1000);
+addBook("a", "Seuss", 1000);
+addBook("b", "Seuss", 1000);
+addBook("c", "Seuss", 1000);
+console.log(libraryBooks);
 console.log("Book Titles \n" + getTitles());
 let titleKeyword = "Things";
 let books = findBooks(titleKeyword);
