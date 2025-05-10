@@ -10,48 +10,48 @@ b.
 
 1. GEC Creation
 Outer: null
-this: Window
-LE: [{}]
-TDZ {str,user,show:fn}
+this: window
+LE: [{ show:fn }]
+TDZ {str,user}
 
 2. GEC Execution
 Outer: null
-this: Window
-LE:[{str: "Greetings, ", user: { firstName: "John", lastname: "Smith", display: fn }, show: fn }]
+this: window
+LE:[ show: fn, {str: "Greetings, ", user: { firstName: "John", lastname: "Smith", display: fn } }]
 TDZ {}
 
 3. display FEC Creation
-Outer: Global
+Outer: global
 this: user
 LE: [{arguments:obj}]
 TDZ: {}
 
 4. display FEC Execution
-Outer: Global
+Outer: global
 this: user
 LE: [{arguments:obj}]
 TDZ: {}
 
 5. show FEC Creation
-Outer: Global
-this: Window
+Outer: global
+this: window
 LE: [{ arguments:obj, msg: "hi" }]
 TDZ: {}
 
 6. show FEC Execution
-Outer: Global
-this: Window
+Outer: global
+this: window
 LE: [{ arguments:obj, msg: "hi" }]
 TDZ: {}
 
 7. show.call() FEC Creation
-Outer: Globals
+Outer: global
 this: user
 LE: [{ arguments:obj, msg: "hello" }]
 TDZ: {}
 
 8. show.call() FEC Execution
-Outer: Global
+Outer: global
 this: user
 LE: [{ arguments:obj, msg: "hello" }]
 TDZ: {}
