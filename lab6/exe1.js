@@ -34,11 +34,5 @@ student3.inputNewGrade(80);
 let students = [student1, student2, student3];
 console.log(students);
 
-let total = 0;
-let count = 0;
-for (const s of students) {
-    total += s.computeAverageGrade();
-    count++;
-}
-const avg = total / count;
+const avg = students.reduce((acc, s) => acc + s.computeAverageGrade(), 0) / students.length;
 console.log("Average grade:", avg.toFixed(2));
