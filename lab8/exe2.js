@@ -1,9 +1,12 @@
 const isPrime = (n) => {
     return new Promise((resolve, reject) => {
         for (let i = 2, s = Math.sqrt(n); i <= s; i++) {
-            if (n % i === 0) return reject({ prime: false });
+            if (n % i === 0) reject({ prime: false });
         }
-        return n > 1 ? resolve({ prime: true }) : reject({ prime: false });
+        if (n <= 1)
+            reject({ prime: false });
+        else
+            resolve({ prime: true });
     });
 };
 
@@ -17,8 +20,12 @@ const isPrime = (n) => {
 
 console.log('start');
 async function testPrime() {
-    const result = await isPrime(7);
-    console.log(result);
+    try {
+        const result = await isPrime(11);
+        console.log(result);
+    } catch (error) {
+        console.log(error);
+    }
 }
 testPrime();
 console.log('end');
